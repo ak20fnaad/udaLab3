@@ -21,9 +21,9 @@ stages:
         #workingDirectory: 'starter-code/automatedtesting/postman'
         workingDirectory: '.'
      # Publish test results to Azure Pipelines
-    - task: PublishTestResults@2
-      inputs:
-      testResultsFiles: '**/*.xml' 
+    #- task: PublishTestResults@2
+      #inputs:
+      #testResultsFiles: '**/*.xml' 
     #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
     #mergeTestResults: false # Optional
     #failTaskOnFailedTests: false # Optional
@@ -32,10 +32,10 @@ stages:
     #buildConfiguration: # Optional
     #publishRunAttachments: true # Optional
      # Publish test results to Azure Pipelines
-     #- task: PublishTestResults@2
-        #displayName: Publish Test Results
-        #inputs:
-        #testResultsFiles: '**\*.xml'        
+     - task: PublishTestResults@2
+       displayName: Publish Test Results
+       inputs:
+        testResultsFiles: '**\*.xml'        
 ##variables:
   #python.version: '3.7.6'
 #stages:
