@@ -22,7 +22,7 @@ stages:
         workingDirectory: '.'
      # Publish test results to Azure Pipelines
     - task: PublishTestResults@2
-       displayName: Publish Test Results
+       #displayName: Publish Test Results
        inputs:
         testResultsFiles: '**\*.xml'        
 ##variables:
