@@ -63,8 +63,8 @@ stages:
           #- task: AzureWebApp@1
             #displayName: 'Deploy Azure Web App'
             #inputs:
-              #azureSubscription: ''
-              #appName: ''
+              #azureSubscription: 'ff9e6a2b-c88d-4ec1-9255-c9d7c20aba34'
+              #appName: 'https://mylessonl3projapplication-appservice.azurewebsites.net'
               #appType: webApp
               ##package: $(Pipeline.Workspace)/drop-fakerestapi/$(Build.BuildId)-fakerestapi.zip
   # - deployment: VMDeploy
